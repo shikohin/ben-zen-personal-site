@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./"],
+      "@/*": ["./"]
+    },
+    "types": ["@nuxt/types", "@nuxtjs/axios"], // Add types for Nuxt modules you use
+    "noEmit": true // Nuxt handles the compilation
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
+}
